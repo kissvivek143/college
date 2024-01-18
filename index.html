@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>College forum</title>
+    <!-- <link rel="stylesheet" href="CSS/style.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="CSS/phone.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&family=Fasthand&family=Italianno&family=Outfit:wght@100;200&family=Rubik+Pixels&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img
+          src="depositphotos_178479350-stock-illustration-unknown-person-silhouette-profile-picture.jpg"
+          alt="logo"
+        />
+      </div>
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#first-year">&#8544; year</a></li>
+        <li class="item"><a href="#second-year">&#8545; year</a></li>
+        <li class="item"><a href="#third-year">&#8546; year</a></li>
+        <li class="item"><a href="#fourth-year">&#8547; year</a></li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img id="image" src="https://kalasalingam.ac.in/wp-content/uploads/2021/04/IMG_1050-scaled.jpg" />
+        </div>
+
+        <div class="mySlides fade">
+          <img id="image" src="https://kalasalingam.ac.in/wp-content/uploads/2021/08/building-19-scaled.jpg"  />
+        </div>
+
+        <div class="mySlides fade">
+          <img id="image" src="https://kalasalingam.ac.in/wp-content/uploads/2021/06/IMG_1066-1-scaled.jpg"/>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+
+    <section id="first-year">
+        <h1>&#8544; year</h1>
+       <div class="card">
+            <div class="card-left">
+              <h1>Semester 1</h1>
+              <p>Click button -> <br> First Semester Material</p>
+              <button class="btn" onclick="college_file()">Click me! -></button>
+            </div>
+            <div class="card-right">
+              <h1>Semester 2</h1>
+              <p>Click button -> <br> Second Semester Material</p>
+              <button class="btn" onclick="college_file()">Click me! -></button>
+            </div>
+       </div>
+    </section>
+
+    <section id="second-year">
+        <h1>&#8545; year</h1>
+       <div class="card">
+        <div class="card-left">
+          <h1>Semester 3</h1>
+          <p>Click button -> <br> Third Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+        <div class="card-right">
+          <h1>Semester 4</h1>
+          <p>Click button -> <br> Fourth Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+       </div>
+    </section>
+
+    <section id="third-year">
+        <h1>&#8546; year</h1>
+       <div class="card">
+        <div class="card-left">
+          <h1>Semester 5</h1>
+          <p>Click button -> <br> Fifth Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+        <div class="card-right">
+          <h1>Semester 6</h1>
+          <p>Click button -> <br> Sixth Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+       </div>
+    </section>
+
+    <section id="fourth-year">
+        <h1>&#8547; year</h1>
+       <div class="card">
+        <div class="card-left">
+          <h1>Semester 7</h1>
+          <p>Click button -> <br> Seventh Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+        <div class="card-right">
+          <h1>Semester 8</h1>
+          <p>Click button -> <br> Eigth Semester Material</p>
+          <button class="btn" onclick="college_file()">Click me! -></button>
+        </div>
+       </div>
+    </section>
+
+
+    <!-- <script src="js/script.js"></script> -->
+    <script src="script.js"></script>
+  </body>
+</html>

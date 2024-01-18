@@ -1,0 +1,634 @@
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+/* :root {
+  --navbar-height: 59px;
+} */
+
+
+#navbar {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  width: 100vw;
+}
+
+/* LOgo and image  */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+  border-radius: 50%;
+}
+
+/* style navbar */
+#navbar ul {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+}
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+#navbar ul li {
+  /* color: white; */
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home section  */
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+#image{
+  float: left;
+  height: 100%;
+  width: 100%;
+  background-size: contain;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* first-year */
+#first-year{
+  height: 100vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#first-year>h1{
+  margin-top: 30%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(24, 123, 163);
+}
+
+#first-year>.card{
+  display: flex;
+  height: 50%;
+  width: 50%;
+  margin-top: 2%;
+  margin: auto;
+}
+#first-year>.card>.card-left{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#first-year>.card>.card-left:hover{
+  transform: scale(1.1);
+}
+#first-year>.card>.card-left>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#first-year>.card>.card-left>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+
+#first-year>.card>.card-left>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s linear;
+}
+#first-year>.card>.card-left>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+#first-year>.card>.card-right{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#first-year>.card>.card-right:hover{
+  transform: scale(1.1);
+}
+#first-year>.card>.card-right>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#first-year>.card>.card-right>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#first-year>.card>.card-right>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#first-year>.card>.card-right>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+
+
+
+/* second-year */
+#second-year{
+  height: 50vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#second-year>h1{
+  margin-top: 5%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(24, 123, 163);
+}
+
+#second-year>.card{
+  display: flex;
+  height: 70%;
+  width: 50%;
+  margin-top: 2%;
+  margin: auto;
+}
+#second-year>.card>.card-left{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#second-year>.card>.card-left:hover{
+  transform: scale(1.1);
+}
+#second-year>.card>.card-left>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#second-year>.card>.card-left>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#second-year>.card>.card-left>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#second-year>.card>.card-left>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+#second-year>.card>.card-right{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#second-year>.card>.card-right:hover{
+  transform: scale(1.1);
+}
+#second-year>.card>.card-right>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#second-year>.card>.card-right>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#second-year>.card>.card-right>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#second-year>.card>.card-right>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+
+
+
+
+
+
+/* Third-year */
+#third-year{
+  height: 50vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#third-year>h1{
+  margin-top: 5%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(24, 123, 163);
+}
+
+#third-year>.card{
+  display: flex;
+  height: 70%;
+  width: 50%;
+  margin-top: 2%;
+  margin: auto;
+}
+#third-year>.card>.card-left{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#third-year>.card>.card-left:hover{
+  transform: scale(1.1);
+}
+#third-year>.card>.card-left>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#third-year>.card>.card-left>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#third-year>.card>.card-left>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#third-year>.card>.card-left>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+#third-year>.card>.card-right{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#third-year>.card>.card-right:hover{
+  transform: scale(1.1);
+}
+#third-year>.card>.card-right>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#third-year>.card>.card-right>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#third-year>.card>.card-right>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#third-year>.card>.card-right>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+
+
+
+
+
+
+/* fourth-year */
+#fourth-year{
+  height: 50vh;
+  width: 100vw;
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#fourth-year>h1{
+  margin-top: 5%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(24, 123, 163);
+}
+
+#fourth-year>.card{
+  display: flex;
+  height: 70%;
+  width: 50%;
+  margin-top: 2%;
+  margin: auto;
+}
+#fourth-year>.card>.card-left{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#fourth-year>.card>.card-left:hover{
+  transform: scale(1.1);
+}
+#fourth-year>.card>.card-left>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#fourth-year>.card>.card-left>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#fourth-year>.card>.card-left>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#fourth-year>.card>.card-left>.btn:hover{
+  background-color: #e6c4c4;
+}
+
+#fourth-year>.card>.card-right{
+  height: 90%;
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 20px black;
+  transition: 0.2s linear all 0s;
+}
+#fourth-year>.card>.card-right:hover{
+  transform: scale(1.1);
+}
+#fourth-year>.card>.card-right>h1{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  color: rgb(44, 171, 221);
+}
+#fourth-year>.card>.card-right>p{
+  text-align: center;
+  margin: 2%;
+  font-family: "Outfit", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+#fourth-year>.card>.card-right>.btn{
+  margin: 10%;
+  height: 50%;
+  width: 50%;
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  border-radius: 50px;
+  position: relative;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  background-color: #eadbdb;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+#fourth-year>.card>.card-right>.btn:hover{
+  background-color: #e6c4c4;
+}
